@@ -1,0 +1,178 @@
+WARNING - 2025-06-05 06:15:18 --> [DEPRECATED] ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\utama_v.php on line 19.
+ 1 APPPATH\Views\utama_v.php(19): ucfirst(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mbs\\app\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(21): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-05 00:00:01 --> ErrorException: Undefined property: App\Controllers\transaction\fabricsexcel::$db
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Controllers\transaction\fabricsexcel.php on line 40.
+ 1 APPPATH\Controllers\transaction\fabricsexcel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\transaction\\fabricsexcel::$db', 'C:\\xampp\\htdocs\\mbs\\app\\Controllers\\transaction\\fabricsexcel.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->exportExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 00:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 00:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 00:00:10 --> ErrorException: Undefined property: App\Controllers\transaction\fabricsexcel::$db
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Controllers\transaction\fabricsexcel.php on line 40.
+ 1 APPPATH\Controllers\transaction\fabricsexcel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\transaction\\fabricsexcel::$db', 'C:\\xampp\\htdocs\\mbs\\app\\Controllers\\transaction\\fabricsexcel.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->exportExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 00:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 00:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 00:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 00:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 00:46:52 --> ErrorException: Undefined variable $usr
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Views\transaction\fabricsexcel_v.php on line 38.
+ 1 APPPATH\Views\transaction\fabricsexcel_v.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usr', 'C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/fabricsexcel_v', [], true)
+ 5 APPPATH\Controllers\transaction\fabricsexcel.php(27): view('transaction/fabricsexcel_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 01:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 01:16:45 --> ErrorException: Undefined variable $dari
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Views\transaction\fabricsexcel_v.php on line 34.
+ 1 APPPATH\Views\transaction\fabricsexcel_v.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dari', 'C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/fabricsexcel_v', [], true)
+ 5 APPPATH\Controllers\transaction\fabricsexcel.php(27): view('transaction/fabricsexcel_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 01:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 01:18:46 --> ErrorException: Attempt to read property "fabricsd_date" on string
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Views\transaction\fabricsexcel_v.php on line 73.
+ 1 APPPATH\Views\transaction\fabricsexcel_v.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fabricsd_date" on string', 'C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php', 73)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/fabricsexcel_v', [], true)
+ 5 APPPATH\Controllers\transaction\fabricsexcel.php(27): view('transaction/fabricsexcel_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 01:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 01:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 02:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 02:17:48 --> Error: Object of class stdClass could not be converted to string
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Views\transaction\fabricsexcel_v.php on line 165.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/fabricsexcel_v', [], true)
+ 4 APPPATH\Controllers\transaction\fabricsexcel.php(27): view('transaction/fabricsexcel_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 02:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 02:19:08 --> ErrorException: Undefined variable $totalinyard
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Views\transaction\fabricsexcel_v.php on line 165.
+ 1 APPPATH\Views\transaction\fabricsexcel_v.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalinyard', 'C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php', 165)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mbs\\app\\Views\\transaction\\fabricsexcel_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/fabricsexcel_v', [], true)
+ 5 APPPATH\Controllers\transaction\fabricsexcel.php(27): view('transaction/fabricsexcel_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 02:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 02:19:39 --> Error: Object of class stdClass could not be converted to string
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Views\transaction\fabricsexcel_v.php on line 178.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/fabricsexcel_v', [], true)
+ 4 APPPATH\Controllers\transaction\fabricsexcel.php(27): view('transaction/fabricsexcel_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 02:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-05 03:05:09 --> PhpOffice\PhpSpreadsheet\Exception: Merge must be on a valid range of cells.
+[Method: GET, Route: fabricsexcel]
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php on line 1778.
+ 1 APPPATH\Controllers\transaction\fabricsexcel.php(81): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->mergeCells('A1:A2:A3')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->exportExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-05 03:06:59 --> Error: Class "App\Controllers\transaction\Coordinate" not found
+[Method: GET, Route: fabricsexcel]
+in APPPATH\Controllers\transaction\fabricsexcel.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\fabricsexcel->exportExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\fabricsexcel))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 07:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 07:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 07:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 07:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-05 14:19:35 --> [DEPRECATED] ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\utama_v.php on line 19.
+ 1 APPPATH\Views\utama_v.php(19): ucfirst(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mbs\\app\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(21): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-05 07:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-05 07:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

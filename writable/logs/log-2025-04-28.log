@@ -1,0 +1,700 @@
+INFO - 2025-04-28 00:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-28 07:11:00 --> [DEPRECATED] ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\utama_v.php on line 19.
+ 1 APPPATH\Views\utama_v.php(19): ucfirst(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(21): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 00:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-28 07:36:24 --> ErrorException: Undefined array key ""
+[Method: GET, Route: cutihutang]
+in APPPATH\Views\transaction\cutihutang_v.php on line 255.
+ 1 APPPATH\Views\transaction\cutihutang_v.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\cutihutang_v.php', 255)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\cutihutang_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/cutihutang_v', [], true)
+ 5 APPPATH\Controllers\transaction\cutihutang.php(23): view('transaction/cutihutang_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 00:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-28 00:50:36 --> ParseError: syntax error, unexpected token "if", expecting "function" or "const"
+[Method: POST, Route: cutihutang]
+in APPPATH\Models\transaction\cutihutang_m.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\hrd\\app\\Models\\transaction\\cutihutang_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\transaction\\cutihutang_m')
+ 3 APPPATH\Controllers\transaction\cutihutang.php(21): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\transaction\\cutihutang_m')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 00:52:25 --> ParseError: syntax error, unexpected token "if", expecting "function" or "const"
+[Method: POST, Route: cutihutang]
+in APPPATH\Models\transaction\cutihutang_m.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\hrd\\app\\Models\\transaction\\cutihutang_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\transaction\\cutihutang_m')
+ 3 APPPATH\Controllers\transaction\cutihutang.php(21): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\transaction\\cutihutang_m')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 00:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 00:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 01:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-28 08:28:40 --> mysqli_sql_exception: Table 'hrd.estate' doesn't exist in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Views\report\rabsend_v.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Common.php(1171): CodeIgniter\View\View->render('report/rabsend_...', Array, true)
+#8 C:\xampp\htdocs\hrd\app\Controllers\report\rabsend.php(22): view('report/rabsend_...', Array)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\report\rabsend->index()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rabsend))
+#11 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-04-28 08:28:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hrd.estate' doesn't exist
+[Method: GET, Route: rabsend]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `estate`', [], false)
+ 2 APPPATH\Views\report\rabsend_v.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\report\\rabsend_v.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('report/rabsend_v', [], true)
+ 6 APPPATH\Controllers\report\rabsend.php(22): view('report/rabsend_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\report\rabsend->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rabsend))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 08:28:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hrd.estate' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `estate`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `estate`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `estate`', [], false)
+ 4 APPPATH\Views\report\rabsend_v.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\report\\rabsend_v.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('report/rabsend_v', [], true)
+ 8 APPPATH\Controllers\report\rabsend.php(22): view('report/rabsend_v', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\report\rabsend->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rabsend))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 08:28:40 --> [Caused by] mysqli_sql_exception: Table 'hrd.estate' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `estate`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `estate`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `estate`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `estate`', [], false)
+ 5 APPPATH\Views\report\rabsend_v.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\report\\rabsend_v.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('report/rabsend_v', [], true)
+ 9 APPPATH\Controllers\report\rabsend.php(22): view('report/rabsend_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\report\rabsend->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rabsend))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 01:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 01:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 08:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 02:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 09:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 02:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 02:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 02:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-28 02:28:28 --> mysqli_sql_exception: Unknown column 'user.position_id' in 'where clause' in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cu...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cu...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cu...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cu...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\hrd\app\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+#8 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-28 02:28:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.position_id' in 'where clause'
+[Method: POST, Route: cutihutang]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = :user.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 2 APPPATH\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 02:28:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.position_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = :user.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 4 APPPATH\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 02:28:28 --> [Caused by] mysqli_sql_exception: Unknown column 'user.position_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = :user.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 5 APPPATH\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 03:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-28 03:11:44 --> mysqli_sql_exception: Unknown column 'cutihutang.position_id' in 'where clause' in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cu...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cu...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cu...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cu...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\hrd\app\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+#8 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-28 03:11:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cutihutang.position_id' in 'where clause'
+[Method: POST, Route: cutihutang]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = :cutihutang.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 2 APPPATH\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 03:11:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cutihutang.position_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = :cutihutang.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 4 APPPATH\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 03:11:44 --> [Caused by] mysqli_sql_exception: Unknown column 'cutihutang.position_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `cutihutang`.`position_id` = :cutihutang.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 5 APPPATH\Models\transaction\cutihutang_m.php(43): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 03:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-28 03:14:37 --> mysqli_sql_exception: Unknown column 'user.position_id' in 'where clause' in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cu...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cu...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cu...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cu...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\hrd\app\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+#8 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-28 03:14:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.position_id' in 'where clause'
+[Method: POST, Route: cutihutang]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = :user.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 2 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 03:14:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.position_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = :user.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 4 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 03:14:37 --> [Caused by] mysqli_sql_exception: Unknown column 'user.position_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = \'0\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`position_id` = :user.position_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 5 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 03:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 03:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 03:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 03:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 03:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 03:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 03:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 03:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-28 03:16:14 --> mysqli_sql_exception: Unknown column 'user.departemen_id' in 'where clause' in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cu...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cu...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cu...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cu...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\hrd\app\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+#8 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-28 03:16:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.departemen_id' in 'where clause'
+[Method: POST, Route: cutihutang]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 2 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 03:16:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.departemen_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 4 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 03:16:14 --> [Caused by] mysqli_sql_exception: Unknown column 'user.departemen_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 5 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 04:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 04:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 04:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 04:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-28 04:31:20 --> mysqli_sql_exception: Unknown column 'user.departemen_id' in 'where clause' in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cu...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cu...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cu...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cu...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\hrd\app\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+#8 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-28 04:31:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.departemen_id' in 'where clause'
+[Method: POST, Route: cutihutang]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 2 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 04:31:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.departemen_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 4 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 04:31:20 --> [Caused by] mysqli_sql_exception: Unknown column 'user.departemen_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 5 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 04:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-28 04:35:01 --> mysqli_sql_exception: Unknown column 'user.departemen_id' in 'where clause' in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cu...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cu...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cu...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cu...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\hrd\app\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+#8 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-28 04:35:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.departemen_id' in 'where clause'
+[Method: POST, Route: cutihutang]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 2 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 04:35:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.departemen_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 4 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 04:35:01 --> [Caused by] mysqli_sql_exception: Unknown column 'user.departemen_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = \'24\'
+AND `cutihutang_date` >= \'2025-04-28\'
+AND `cutihutang_date` <= \'2025-04-28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cutihutang`
+WHERE `user`.`departemen_id` = :user.departemen_id:
+AND `cutihutang_date` >= :cutihutang_date:
+AND `cutihutang_date` <= :cutihutang_date.1:', [...], false)
+ 5 APPPATH\Models\transaction\cutihutang_m.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\transaction\cutihutang.php(22): App\Models\transaction\cutihutang_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\cutihutang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\cutihutang))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-28 04:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 05:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 13:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 06:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 06:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 06:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 06:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 06:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 06:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 06:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 07:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 23:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-28 23:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,334 @@
+WARNING - 2025-04-30 06:27:10 --> [DEPRECATED] ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\utama_v.php on line 19.
+ 1 APPPATH\Views\utama_v.php(19): ucfirst(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(21): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-04-30 06:56:59 --> [DEPRECATED] ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\utama_v.php on line 19.
+ 1 APPPATH\Views\utama_v.php(19): ucfirst(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(21): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-30 02:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 02:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 02:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 02:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 09:30:03 --> [DEPRECATED] ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\utama_v.php on line 19.
+ 1 APPPATH\Views\utama_v.php(19): ucfirst(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(21): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-30 02:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 09:30:06 --> mysqli_sql_exception: Column 'departemen_name' in order clause is ambiguous in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Common.php(1171): CodeIgniter\View\View->render('transaction/abs...', Array, true)
+#8 C:\xampp\htdocs\hrd\app\Controllers\transaction\absen.php(23): view('transaction/abs...', Array)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+#11 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-04-30 09:30:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'departemen_name' in order clause is ambiguous
+[Method: GET, Route: absen]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = :user.position_id:
+AND `absen_date` >= :absen_date:
+AND `absen_date` <= :absen_date.1:
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', [...], false)
+ 2 APPPATH\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\absen_v.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/absen_v', [], true)
+ 6 APPPATH\Controllers\transaction\absen.php(23): view('transaction/absen_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:30:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'departemen_name' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = :user.position_id:
+AND `absen_date` >= :absen_date:
+AND `absen_date` <= :absen_date.1:
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', [...], false)
+ 4 APPPATH\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\absen_v.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/absen_v', [], true)
+ 8 APPPATH\Controllers\transaction\absen.php(23): view('transaction/absen_v', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:30:06 --> [Caused by] mysqli_sql_exception: Column 'departemen_name' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = :user.position_id:
+AND `absen_date` >= :absen_date:
+AND `absen_date` <= :absen_date.1:
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', [...], false)
+ 5 APPPATH\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\absen_v.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/absen_v', [], true)
+ 9 APPPATH\Controllers\transaction\absen.php(23): view('transaction/absen_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-30 03:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 10:03:06 --> [DEPRECATED] ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\utama_v.php on line 19.
+ 1 APPPATH\Views\utama_v.php(19): ucfirst(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(21): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-30 03:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 10:13:29 --> mysqli_sql_exception: Column 'departemen_name' in order clause is ambiguous in C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrd\app\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Common.php(1171): CodeIgniter\View\View->render('transaction/abs...', Array, true)
+#8 C:\xampp\htdocs\hrd\app\Controllers\transaction\absen.php(23): view('transaction/abs...', Array)
+#9 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+#10 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+#11 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hrd\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\hrd\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-04-30 10:13:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'departemen_name' in order clause is ambiguous
+[Method: GET, Route: absen]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = :user.position_id:
+AND `absen_date` >= :absen_date:
+AND `absen_date` <= :absen_date.1:
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', [...], false)
+ 2 APPPATH\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\absen_v.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/absen_v', [], true)
+ 6 APPPATH\Controllers\transaction\absen.php(23): view('transaction/absen_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 10:13:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'departemen_name' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = :user.position_id:
+AND `absen_date` >= :absen_date:
+AND `absen_date` <= :absen_date.1:
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', [...], false)
+ 4 APPPATH\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\absen_v.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/absen_v', [], true)
+ 8 APPPATH\Controllers\transaction\absen.php(23): view('transaction/absen_v', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 10:13:29 --> [Caused by] mysqli_sql_exception: Column 'departemen_name' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = \'0\'
+AND `absen_date` >= \'2025-04-30\'
+AND `absen_date` <= \'2025-04-30\'
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+LEFT JOIN `user` ON `user`.`user_id`=`absen`.`user_id`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `departemen` ON `departemen`.`departemen_id`=`user`.`departemen_id`
+WHERE `user`.`position_id` = :user.position_id:
+AND `absen_date` >= :absen_date:
+AND `absen_date` <= :absen_date.1:
+ORDER BY `departemen_name` ASC, `position_name` ASC, `user_nama` ASC', [...], false)
+ 5 APPPATH\Views\transaction\absen_v.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\hrd\\app\\Views\\transaction\\absen_v.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/absen_v', [], true)
+ 9 APPPATH\Controllers\transaction\absen.php(23): view('transaction/absen_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\transaction\absen->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\absen))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-30 03:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 03:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 04:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 05:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
