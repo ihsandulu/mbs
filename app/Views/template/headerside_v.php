@@ -138,7 +138,7 @@
                         </li>
                     <?php } ?>
 
-                    <?php
+                    <!-- <?php
                     if (
                         (
                             isset(session()->get("position_id")[0][0])
@@ -155,7 +155,7 @@
                         <li>
                             <a class="  " href="<?= base_url("msize"); ?>" aria-expanded="false"><i class="fa fa-building"></i><span class="hide-menu">Size</span></a>
                         </li>
-                    <?php } ?>
+                    <?php } ?> -->
 
 
 
