@@ -245,6 +245,8 @@
                                     $ke = date("Y-m-d");
                                     if (isset($_GET["dari"])) {
                                         $dari = $_GET["dari"];
+                                    }else{
+                                        $dari = date("Y-m-d",strtotime("-5 days"));
                                     }
                                     if (isset($_GET["ke"])) {
                                         $ke = $_GET["ke"];
@@ -336,10 +338,13 @@
                                     if (isset($_GET["fileno"])) {
                                         $build->where("fabrics_fileno", $_GET["fileno"]);
                                     }
-                                    if (isset($_GET["dari"]) && isset($_GET["ke"])) {
+                                    /* if (isset($_GET["dari"]) && isset($_GET["ke"])) {
                                         $build->where("fabrics_date >=", $dari)
                                             ->where("fabrics_date <=", $ke);
-                                    }
+                                    } */
+                                    
+                                        $build->where("fabrics_date >=", $dari)
+                                            ->where("fabrics_date <=", $ke);
                                     $usr = $build->orderBy("fabrics_date DESC")
                                         ->get();
                                     //echo $this->db->getLastquery();
