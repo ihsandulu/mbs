@@ -233,7 +233,7 @@
                                     }
                                     ?>
                                     <div class="col-9">
-                                        <select id="mfiltern"  onchange="pilihfilter()" class="form-control">
+                                        <select id="mfiltern" onchange="pilihfilter()" class="form-control">
                                             <option value="tgl" <?= ($filtern == "tgl") ? "selected" : ""; ?>>Tgl Awal Masuk</option>
                                             <option value="fileno" <?= ($filtern == "fileno") ? "selected" : ""; ?>>File No.</option>
                                         </select>
@@ -245,8 +245,8 @@
                                     $ke = date("Y-m-d");
                                     if (isset($_GET["dari"])) {
                                         $dari = $_GET["dari"];
-                                    }else{
-                                        $dari = date("Y-m-d",strtotime("-5 days"));
+                                    } else {
+                                        $dari = date("Y-m-d", strtotime("-5 days"));
                                     }
                                     if (isset($_GET["ke"])) {
                                         $ke = $_GET["ke"];
@@ -257,7 +257,7 @@
                                             <label class="text-dark">Dari :</label>
                                         </div>
                                         <div class="col-8">
-                                            <input type="date" class="form-control" placeholder="Dari" name="dari" value="<?= $dari; ?>">
+                                            <input type="date" class="form-control" placeholder="Dari" id="mdari" name="dari" value="<?= $dari; ?>">
                                         </div>
                                     </div>
                                     <div class="col-4 row mb-2">
@@ -265,12 +265,12 @@
                                             <label class="text-dark">Ke :</label>
                                         </div>
                                         <div class="col-8">
-                                            <input type="date" class="form-control" placeholder="Ke" name="ke" value="<?= $ke; ?>">
+                                            <input type="date" class="form-control" placeholder="Ke" id="mke" name="ke" value="<?= $ke; ?>">
                                         </div>
                                     </div>
                                     <div class="col-4 row mb-2">
                                         <div class="col-12">
-                                            <input type="hidden" class="filtern" name="filtern"/>
+                                            <input type="hidden" class="filtern" name="filtern" />
                                             <button type="submit" class="btn btn-block btn-primary">Search</button>
                                         </div>
                                     </div>
@@ -287,12 +287,12 @@
                                             <label class="text-dark">File No. :</label>
                                         </div>
                                         <div class="col-9">
-                                            <input type="text" class="form-control" placeholder="" name="fileno" value="<?= $ifileno; ?>">
+                                            <input type="text" class="form-control" placeholder="" id="mfileno" name="fileno" value="<?= $ifileno; ?>">
                                         </div>
                                     </div>
                                     <div class="col-4 row mb-2">
                                         <div class="col-12">
-                                            <input type="hidden" class="filtern" name="filtern"/>
+                                            <input type="hidden" class="filtern" name="filtern" />
                                             <button type="submit" class="btn btn-block btn-primary">Search</button>
                                         </div>
                                     </div>
@@ -342,9 +342,9 @@
                                         $build->where("fabrics_date >=", $dari)
                                             ->where("fabrics_date <=", $ke);
                                     } */
-                                    
-                                        $build->where("fabrics_date >=", $dari)
-                                            ->where("fabrics_date <=", $ke);
+
+                                    $build->where("fabrics_date >=", $dari)
+                                        ->where("fabrics_date <=", $ke);
                                     $usr = $build->orderBy("fabrics_date DESC")
                                         ->get();
                                     //echo $this->db->getLastquery();
@@ -489,6 +489,18 @@
 </div>
 <script>
     $(document).ready(function() {
+
+        let mfiltern = $("#mfiltern").val();
+        let mdari = $("#mdari").val();
+        let mke = $("#mke").val();
+        let mfileno = $("#mfileno").val();
+        let url = "<?= base_url("fabricsexcel"); ?>?buyer_id=<?= strtolower($buyer); ?>";
+        if (mfiltern == "tgl") {
+            url += "&dari=" + mdari + "&ke=" + mke;
+        } else {
+            url += "&fileno=" + mfileno;
+        }
+
         $('#gad').DataTable({
             dom: 'Blfrtip',
             autoWidth: false,
@@ -521,21 +533,8 @@
                 {
                     text: 'Export Excel',
                     className: 'btn-export-excel',
-                    action: function(e, dt, node, config) {
-                        // Ganti dengan URL tujuanmu
-                        <?php
-                        $url ="buyer_id=".strtolower($buyer);
-                        if (isset($_GET["filtern"])) {
-                           if($_GET["filtern"]=="tgl"){
-                            $url.="&dari=".$_GET["dari"]."&ke=".$_GET["ke"];
-                           }else{
-                            $url.="&fileno=".$_GET["fileno"];
-                           }
-                        } else {                            
-                            $url.="&dari=".date("Y-m-d",strtotime("-5 days"))."&ke=".date("Y-m-d");
-                        }
-                        ?>
-                        window.location.href = '<?= base_url("fabricsexcel?".$url); ?>';
+                    action: function(e, dt, node, config) {                        
+                        window.location.href = url;
                     }
                 }
             ],
