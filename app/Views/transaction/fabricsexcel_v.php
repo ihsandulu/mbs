@@ -186,10 +186,10 @@
                                         <td class=""><?= $usr->fabrics_lbs; ?></td>
                                         <td class=""><?= $usr->fabrics_remark; ?></td>
                                         <?php foreach ($ardate as $ardat) { ?>
-                                            <td class=""><?= $arinyard[$usr->fabrics_id][$ardat]; ?></td>
-                                            <td class=""><?= $arinbale[$usr->fabrics_id][$ardat]; ?></td>
-                                            <td class=""><?= $aroutyard[$usr->fabrics_id][$ardat]; ?></td>
-                                            <td class=""><?= $aroutbale[$usr->fabrics_id][$ardat]; ?></td>
+                                            <td class=""><?=(isset($arinyard[$usr->fabrics_id][$ardat]))?$arinyard[$usr->fabrics_id][$ardat]:""; ?></td>
+                                            <td class=""><?=(isset($arinbale[$usr->fabrics_id][$ardat]))?$arinbale[$usr->fabrics_id][$ardat]:""; ?></td>
+                                            <td class=""><?=(isset($aroutyard[$usr->fabrics_id][$ardat]))?$aroutyard[$usr->fabrics_id][$ardat]:""; ?></td>
+                                            <td class=""><?=(isset($aroutbale[$usr->fabrics_id][$ardat]))?$aroutbale[$usr->fabrics_id][$ardat]:""; ?></td>
                                         <?php } ?>
                                         <td class=""><?= $artinyard[$usr->fabrics_id]; ?></td>
                                         <td class=""><?= $artinbale[$usr->fabrics_id]; ?></td>
