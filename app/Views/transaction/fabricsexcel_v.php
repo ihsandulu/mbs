@@ -213,7 +213,7 @@
                                             }
                                             ?>
                                             <?= $iartoutyard; ?></td>
-                                        <td class=""><?= (isset($artoutbale[$usr->fabrics_id])) ? $artoutbale[$usr->fabrics_id]:""; ?></td>
+                                        <td class=""><?= (isset($artoutbale[$usr->fabrics_id])) ? $artoutbale[$usr->fabrics_id] : ""; ?></td>
                                         <td class=""><?= $iartoutyard - $iartinyard; ?></td>
                                     </tr>
                                 <?php } ?>
