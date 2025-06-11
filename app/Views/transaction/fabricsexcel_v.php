@@ -220,7 +220,7 @@
     $(document).ready(function() {
         let table = $('#tabelku').DataTable({
             dom: 'Bfrtip',
-            buttons: [{
+            /* buttons: [{
                 extend: 'excelHtml5',
                 title: 'Data Export',
                 autoFilter: true,
@@ -243,7 +243,7 @@
             initComplete: function() {
                 let dt = this.api();
                 dt.button('.buttons-excel').trigger();
-            }
+            } */
         });
     });
 </script>
