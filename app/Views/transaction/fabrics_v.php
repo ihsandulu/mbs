@@ -342,9 +342,10 @@
                                         $build->where("fabrics_date >=", $dari)
                                             ->where("fabrics_date <=", $ke);
                                     } */
-
-                                    $build->where("fabrics_date >=", $dari)
-                                        ->where("fabrics_date <=", $ke);
+                                    if (!isset($_GET["fileno"])) {
+                                        $build->where("fabrics_date >=", $dari)
+                                            ->where("fabrics_date <=", $ke);
+                                    }
                                     $usr = $build->orderBy("fabrics_date DESC")
                                         ->get();
                                     //echo $this->db->getLastquery();
@@ -533,7 +534,7 @@
                 {
                     text: 'Export Excel',
                     className: 'btn-export-excel',
-                    action: function(e, dt, node, config) {                        
+                    action: function(e, dt, node, config) {
                         window.location.href = url;
                     }
                 }
