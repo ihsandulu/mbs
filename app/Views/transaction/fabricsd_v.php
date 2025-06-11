@@ -280,7 +280,9 @@
                                     if (isset($_GET["tipe"])) {
                                         $build->where("fabricsd_type", $tipe);
                                     }
-                                    $usr = $build->orderBy("fabricsd_date DESC")
+                                    $usr = $build
+                                    ->orderBy("fabricsd_date DESC")
+                                    ->orderBy("fabricsd_type DESC")
                                         ->get();
                                     //echo $this->db->getLastquery();
                                     $no = 1;
@@ -339,16 +341,16 @@
 
                                             <form class="form-horizontal row" method="post" enctype="multipart/form-data">
                                                 <td class="">
+                                                    <input type="date" class="form-control inputn inputn<?= $usr->fabricsd_id; ?> " id="fabricsd_date<?= $usr->fabricsd_id; ?>" name="fabricsd_date" placeholder="Tanggal" value="<?= $usr->fabricsd_date; ?>">
+                                                    <span class="isin<?= $usr->fabricsd_id; ?>"><?= $usr->fabricsd_date; ?></span>
+                                                </td>
+                                                <td class="">
                                                     <select required class="form-control inputn inputn<?= $usr->fabricsd_id; ?> " id="fabricsd_type<?= $usr->fabricsd_id; ?>" name="fabricsd_type">
                                                         <option value="" <?= ($usr->fabricsd_type == "") ? "selected" : ""; ?>>Pilih IN/OUT</option>
                                                         <option value="IN" <?= ($usr->fabricsd_type == "IN") ? "selected" : ""; ?>>IN</option>
                                                         <option value="OUT" <?= ($usr->fabricsd_type == "OUT") ? "selected" : ""; ?>>OUT</option>
                                                     </select>
                                                     <span class="isin<?= $usr->fabricsd_id; ?>"><?= $usr->fabricsd_type; ?></span>
-                                                </td>
-                                                <td class="">
-                                                    <input type="date" class="form-control inputn inputn<?= $usr->fabricsd_id; ?> " id="fabricsd_date<?= $usr->fabricsd_id; ?>" name="fabricsd_date" placeholder="Tanggal" value="<?= $usr->fabricsd_date; ?>">
-                                                    <span class="isin<?= $usr->fabricsd_id; ?>"><?= $usr->fabricsd_date; ?></span>
                                                 </td>
                                                 <td class="">
                                                     <input type="text" class="form-control inputn inputn<?= $usr->fabricsd_id; ?> " id="fabricsd_yard<?= $usr->fabricsd_id; ?>" name="fabricsd_yard" placeholder="Yard" value="<?= $usr->fabricsd_yard; ?>">

@@ -29,8 +29,8 @@ $routes->add('/polham', 'transaction\fabrics::polham');
 $routes->add('/topten', 'transaction\fabrics::topten');
 $routes->add('/carters', 'transaction\fabrics::carters');
 $routes->add('/fabricsd', 'transaction\fabricsd::index');
-// $routes->add('/fabricsexcel', 'transaction\fabricsexcel::index');
-$routes->add('/fabricsexcel', 'transaction\fabricsexcel::exportExcel');
+$routes->add('/fabricsexcel', 'transaction\fabricsexcel::index');
+// $routes->add('/fabricsexcel', 'transaction\fabricsexcel::exportExcel');
 
 
 $routes->add('/rcutihutang', 'report\rcutihutang::index');

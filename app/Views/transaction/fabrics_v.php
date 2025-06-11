@@ -532,7 +532,7 @@
                     }
                 },
                 {
-                    text: 'Export Excel',
+                    text: 'Simulasi',
                     className: 'btn-export-excel',
                     action: function(e, dt, node, config) {
                         window.location.href = url;

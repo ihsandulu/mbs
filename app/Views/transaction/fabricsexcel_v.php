@@ -46,7 +46,7 @@
                         }
                         $usr = $build
                             ->groupBy("fabricsd_date")
-                            ->orderBy("fabricsd_date DESC")
+                            ->orderBy("fabricsd_date ASC")
                             ->get();
                         // echo $this->db->getLastquery();
                         // die;
