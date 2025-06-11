@@ -186,17 +186,35 @@
                                         <td class=""><?= $usr->fabrics_lbs; ?></td>
                                         <td class=""><?= $usr->fabrics_remark; ?></td>
                                         <?php foreach ($ardate as $ardat) { ?>
-                                            <td class=""><?=(isset($arinyard[$usr->fabrics_id][$ardat]))?$arinyard[$usr->fabrics_id][$ardat]:""; ?></td>
-                                            <td class=""><?=(isset($arinbale[$usr->fabrics_id][$ardat]))?$arinbale[$usr->fabrics_id][$ardat]:""; ?></td>
-                                            <td class=""><?=(isset($aroutyard[$usr->fabrics_id][$ardat]))?$aroutyard[$usr->fabrics_id][$ardat]:""; ?></td>
-                                            <td class=""><?=(isset($aroutbale[$usr->fabrics_id][$ardat]))?$aroutbale[$usr->fabrics_id][$ardat]:""; ?></td>
+                                            <td class=""><?= (isset($arinyard[$usr->fabrics_id][$ardat])) ? $arinyard[$usr->fabrics_id][$ardat] : ""; ?></td>
+                                            <td class=""><?= (isset($arinbale[$usr->fabrics_id][$ardat])) ? $arinbale[$usr->fabrics_id][$ardat] : ""; ?></td>
+                                            <td class=""><?= (isset($aroutyard[$usr->fabrics_id][$ardat])) ? $aroutyard[$usr->fabrics_id][$ardat] : ""; ?></td>
+                                            <td class=""><?= (isset($aroutbale[$usr->fabrics_id][$ardat])) ? $aroutbale[$usr->fabrics_id][$ardat] : ""; ?></td>
                                         <?php } ?>
-                                        <td class=""><?= $artinyard[$usr->fabrics_id]; ?></td>
-                                        <td class=""><?= $artinbale[$usr->fabrics_id]; ?></td>
-                                        <td class=""><?= $breceive = $artinyard[$usr->fabrics_id] - $usr->fabrics_yds; ?></td>
-                                        <td class=""><?= $artoutyard[$usr->fabrics_id]; ?></td>
-                                        <td class=""><?= $artoutbale[$usr->fabrics_id]; ?></td>
-                                        <td class=""><?= $artoutyard[$usr->fabrics_id] - $artinyard[$usr->fabrics_id]; ?></td>
+                                        <td class=""><?= (isset($artinyard[$usr->fabrics_id])) ? $artinyard[$usr->fabrics_id] : ""; ?></td>
+                                        <td class=""><?= (isset($artinbale[$usr->fabrics_id])) ? $artinbale[$usr->fabrics_id] : ""; ?></td>
+                                        <td class="">
+                                            <?php
+                                            if (isset($artinyard[$usr->fabrics_id])) {
+                                                $iartinyard = $artinyard[$usr->fabrics_id];
+                                            } else {
+                                                $iartinyard = 0;
+                                            }
+                                            $breceive = $iartinyard - $usr->fabrics_yds;
+                                            echo $breceive;
+                                            ?>
+                                        </td>
+                                        <td class="">
+                                            <?php
+                                            if (isset($artoutyard[$usr->fabrics_id])) {
+                                                $iartoutyard = $artoutyard[$usr->fabrics_id];
+                                            } else {
+                                                $iartoutyard = 0;
+                                            }
+                                            ?>
+                                            <?= $iartoutyard; ?></td>
+                                        <td class=""><?= (isset($artoutbale[$usr->fabrics_id])) ? $artoutbale[$usr->fabrics_id]:""; ?></td>
+                                        <td class=""><?= $iartoutyard - $iartinyard; ?></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
