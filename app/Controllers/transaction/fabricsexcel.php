@@ -8,6 +8,8 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use PhpOffice\PhpSpreadsheet\Worksheet\Drawing;
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Style\Border;
+use PhpOffice\PhpSpreadsheet\Style\Borders;
 
 class fabricsexcel extends BaseController
 {
@@ -287,7 +289,7 @@ class fabricsexcel extends BaseController
                 $fabricsdout_bale = Coordinate::stringFromColumnIndex($tp + 3);
                 $sheet->setCellValue($fabricsdout_bale . $row, $aroutbale[$usr->fabrics_id][$ardat]);
                 $tp += 4;
-            }   
+            }
 
             $totalinyardd = Coordinate::stringFromColumnIndex($tp);
             $sheet->setCellValue($totalinyardd . $row, $artinyard[$usr->fabrics_id]);
@@ -319,7 +321,20 @@ class fabricsexcel extends BaseController
             ->getAlignment()
             ->setWrapText(true);
 
+        // Tentukan area range dari cell yang akan diberi border
+        $lastColumn = Coordinate::stringFromColumnIndex($tp + 5); // pastikan ini adalah kolom terakhir
+        $lastRow = $row; // baris terakhir setelah semua data ditulis
+        $range = 'A1:' . $lastColumn . $lastRow;
 
+        // Terapkan border ke seluruh cell dalam range
+        $sheet->getStyle($range)->applyFromArray([
+            'borders' => [
+                'allBorders' => [
+                    'borderStyle' => Border::BORDER_THIN, // Bisa diganti ke BORDER_MEDIUM, dsb.
+                    'color' => ['argb' => 'FF000000'], // Warna hitam
+                ],
+            ],
+        ]);
 
         // Simpan ke file
         $filename = 'fabric_export_' . date('Ymd_His') . '.xlsx';
