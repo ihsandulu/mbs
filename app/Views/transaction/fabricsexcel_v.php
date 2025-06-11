@@ -55,6 +55,54 @@
                         foreach ($usr->getResult() as $usr) {
                             $ardate[] = $usr->fabricsd_date;
                         } ?>
+                        <?php
+                        $fabricsd = $this->db->table("fabricsd")
+                            ->where("fabrics_id", $usr->fabrics_id)
+                            ->get();
+                        $totalinyard = 0;
+                        $totalinbale = 0;
+                        $totaloutyard = 0;
+                        $totaloutbale = 0;
+                        $arinyard = array();
+                        $arinbale = array();
+                        $aroutyard = array();
+                        $aroutbale = array();
+                        $artinyard = array();
+                        $artinbale = array();
+                        $artoutyard = array();
+                        $artoutbale = array();
+                        foreach ($fabricsd->getResult() as $fabricsd) {
+                            if ($fabricsd->fabricsd_type == "IN") {
+                                $arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_yard;
+                                $arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_bale;
+                                if (!isset($aroutyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                                    $aroutyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                                }
+                                if (!isset($aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                                    $aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                                }
+
+                                $totalinyard += $fabricsd->fabricsd_yard;
+                                $totalinbale += $fabricsd->fabricsd_bale;
+                            } else {
+                                if (!isset($arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                                    $arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                                }
+                                if (!isset($arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                                    $arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                                }
+                                $aroutyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_yard;
+                                $aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_bale;
+
+                                $totaloutyard += $fabricsd->fabricsd_yard;
+                                $totaloutbale += $fabricsd->fabricsd_bale;
+                            }
+
+                            $artinyard[$fabricsd->fabrics_id] = $totalinyard;
+                            $artinbale[$fabricsd->fabrics_id] = $totalinbale;
+                            $artoutyard[$fabricsd->fabrics_id] = $totaloutyard;
+                            $artoutbale[$fabricsd->fabrics_id] = $totaloutbale;
+                        } ?>
                         <table id="tabelku" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                             <!-- <table id="dataTable" class="table table-condensed table-hover w-auto dtable"> -->
                             <thead class="">
@@ -119,17 +167,10 @@
                                     foreach ($usr->getResult() as $usr) {
                                     ?>
                                     <tr>
-
                                         <!-- <td><?= $no++; ?></td> -->
-
-
                                         <!-- di hide -->
-                                        <td class="text-left">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_fileno; ?></span>
-                                        </td>
-                                        <td class="">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_name; ?></span>
-                                        </td>
+                                        <td class="text-left"><?= $usr->fabrics_fileno; ?></td>
+                                        <td class=""><?= $usr->fabrics_name; ?></td>
                                         <td class="">
                                             <?php if ($usr->fabrics_cad != "") {
                                                 $user_image = "images/fabrics_cad/" . $usr->fabrics_cad;
@@ -138,61 +179,24 @@
                                             } ?>
                                             <img id="fabrics_cad_image<?= $usr->fabrics_id; ?>" width="100" height="100" src="<?= base_url($user_image); ?>" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('<?= base_url($user_image); ?>')" />
                                         </td>
-                                        <td class="">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_color; ?></span>
-                                        </td>
-                                        <td class="">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_part; ?></span>
-                                        </td>
-                                        <td class="">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_qty; ?></span>
-                                        </td>
-                                        <td class="">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_yds; ?></span>
-                                        </td>
-                                        <td class="">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_lbs; ?></span>
-                                        </td>
-                                        <td class="">
-                                            <span class="isin<?= $usr->fabrics_id; ?>"><?= $usr->fabrics_remark; ?></span>
-                                        </td>
-                                        <?php
-                                        $fabricsd = $this->db->table("fabricsd")->where("fabrics_id", $usr->fabrics_id)->get();
-                                        $totalinyard = 0;
-                                        $totalinbale = 0;
-                                        $totaloutyard = 0;
-                                        $totaloutbale = 0;
-                                        foreach ($fabricsd->getResult() as $fabricsd) {
-                                            if ($fabricsd->fabricsd_type == "IN") {
-                                                $totalinyard += $fabricsd->fabricsd_yard;
-                                                $totalinbale += $fabricsd->fabricsd_bale; ?>
-                                                <td class="">
-                                                    <span class="isin<?= $usr->fabrics_id; ?>"><?= $fabricsd->fabricsd_yard; ?></span>
-                                                </td>
-                                                <td class="">
-                                                    <span class="isin<?= $usr->fabrics_id; ?>"><?= $fabricsd->fabricsd_bale; ?></span>
-                                                </td>
-                                                <td class=""></td>
-                                                <td class=""></td>
-                                            <?php } else {
-                                                $totaloutyard += $fabricsd->fabricsd_yard;
-                                                $totaloutbale += $fabricsd->fabricsd_bale; ?>
-                                                <td class=""></td>
-                                                <td class=""></td>
-                                                <td class="">
-                                                    <span class="isin<?= $usr->fabrics_id; ?>"><?= $fabricsd->fabricsd_yard; ?></span>
-                                                </td>
-                                                <td class="">
-                                                    <span class="isin<?= $usr->fabrics_id; ?>"><?= $fabricsd->fabricsd_bale; ?></span>
-                                                </td>
-                                        <?php }
-                                        } ?>
-                                        <td class=""><?=$totalinyard;?></td>
-                                        <td class=""><?=$totalinbale;?></td>
-                                        <td class=""><?=$breceive=$totalinyard-$usr->fabrics_yds;?></td>
-                                        <td class=""><?=$totaloutyard;?></td>
-                                        <td class=""><?=$totaloutbale;?></td>
-                                        <td class=""><?=$totaloutyard-$totalinyard;?></td>
+                                        <td class=""><?= $usr->fabrics_color; ?></td>
+                                        <td class=""><?= $usr->fabrics_part; ?></td>
+                                        <td class=""><?= $usr->fabrics_qty; ?></td>
+                                        <td class=""><?= $usr->fabrics_yds; ?></td>
+                                        <td class=""><?= $usr->fabrics_lbs; ?></td>
+                                        <td class=""><?= $usr->fabrics_remark; ?></td>
+                                        <?php foreach ($ardate as $ardat) { ?>
+                                            <td class=""><?= $arinyard[$usr->fabrics_id][$ardat]; ?></td>
+                                            <td class=""><?= $arinbale[$usr->fabrics_id][$ardat]; ?></td>
+                                            <td class=""><?= $aroutyard[$usr->fabrics_id][$ardat]; ?></td>
+                                            <td class=""><?= $aroutbale[$usr->fabrics_id][$ardat]; ?></td>
+                                        <?php } ?>
+                                        <td class=""><?= $artinyard[$usr->fabrics_id]; ?></td>
+                                        <td class=""><?= $artinbale[$usr->fabrics_id]; ?></td>
+                                        <td class=""><?= $breceive = $artinyard[$usr->fabrics_id] - $usr->fabrics_yds; ?></td>
+                                        <td class=""><?= $artoutyard[$usr->fabrics_id]; ?></td>
+                                        <td class=""><?= $artoutbale[$usr->fabrics_id]; ?></td>
+                                        <td class=""><?= $artoutyard[$usr->fabrics_id] - $artinyard[$usr->fabrics_id]; ?></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
