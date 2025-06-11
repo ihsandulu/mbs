@@ -554,7 +554,7 @@
                     text: 'Simulasi',
                     className: 'btn-export-hijau',
                     action: function(e, dt, node, config) {
-                        window.location.href = url;
+                        window.open(url, '_blank');
                     }
                 },
                 {
