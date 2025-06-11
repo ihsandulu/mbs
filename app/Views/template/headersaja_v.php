@@ -23,7 +23,7 @@ if ($this->session->get('user_id') == "") {
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/logo.png">
-    <title>POS</title>
+    <title></title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.4.5.2.css" rel="stylesheet">
