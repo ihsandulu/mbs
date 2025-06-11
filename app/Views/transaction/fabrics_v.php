@@ -4,6 +4,22 @@
         text-align: left !important;
     }
 
+    .btn-export-hijau {
+        background-color:rgb(71, 207, 103) !important;
+        /* Warna hijau */
+        color: white !important;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .btn-export-hijau:hover {
+        background-color:rgb(59, 163, 82) !important;
+        /* Warna hijau lebih gelap saat hover */
+    }
+
     .btn-export-excel {
         background-color: #28a745 !important;
         /* Warna hijau */
@@ -495,11 +511,14 @@
         let mdari = $("#mdari").val();
         let mke = $("#mke").val();
         let mfileno = $("#mfileno").val();
-        let url = "<?= base_url("fabricsexcel"); ?>?buyer_id=<?= strtolower($buyer); ?>";
+        let url = "<?= base_url("fabricssimulasi"); ?>?buyer_id=<?= strtolower($buyer); ?>";
+        let urle = "<?= base_url("fabricsexcel"); ?>?buyer_id=<?= strtolower($buyer); ?>";
         if (mfiltern == "tgl") {
             url += "&dari=" + mdari + "&ke=" + mke;
+            urle += "&dari=" + mdari + "&ke=" + mke;
         } else {
             url += "&fileno=" + mfileno;
+            urle += "&fileno=" + mfileno;
         }
 
         $('#gad').DataTable({
@@ -533,9 +552,16 @@
                 },
                 {
                     text: 'Simulasi',
-                    className: 'btn-export-excel',
+                    className: 'btn-export-hijau',
                     action: function(e, dt, node, config) {
                         window.location.href = url;
+                    }
+                },
+                {
+                    text: 'Export Excel',
+                    className: 'btn-export-excel',
+                    action: function(e, dt, node, config) {
+                        window.location.href = urle;
                     }
                 }
             ],

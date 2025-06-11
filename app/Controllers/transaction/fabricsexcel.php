@@ -22,7 +22,7 @@ class fabricsexcel extends BaseController
     }
 
 
-    public function index()
+    public function simulasi()
     {
         $data[""] = 1;
         return view('transaction/fabricsexcel_v', $data);
@@ -68,7 +68,53 @@ class fabricsexcel extends BaseController
             $ardate[] = $usr->fabricsd_date;
         }
 
+        $fabricsd = $this->db->table("fabricsd")
+            ->where("fabrics_id", $usr->fabrics_id)
+            ->get();
+        $totalinyard = 0;
+        $totalinbale = 0;
+        $totaloutyard = 0;
+        $totaloutbale = 0;
+        $arinyard = array();
+        $arinbale = array();
+        $aroutyard = array();
+        $aroutbale = array();
+        $artinyard = array();
+        $artinbale = array();
+        $artoutyard = array();
+        $artoutbale = array();
+        foreach ($fabricsd->getResult() as $fabricsd) {
+            if ($fabricsd->fabricsd_type == "IN") {
+                $arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_yard;
+                $arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_bale;
+                if (!isset($aroutyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                    $aroutyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                }
+                if (!isset($aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                    $aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                }
 
+                $totalinyard += $fabricsd->fabricsd_yard;
+                $totalinbale += $fabricsd->fabricsd_bale;
+            } else {
+                if (!isset($arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                    $arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                }
+                if (!isset($arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
+                    $arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
+                }
+                $aroutyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_yard;
+                $aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_bale;
+
+                $totaloutyard += $fabricsd->fabricsd_yard;
+                $totaloutbale += $fabricsd->fabricsd_bale;
+            }
+
+            $artinyard[$fabricsd->fabrics_id] = $totalinyard;
+            $artinbale[$fabricsd->fabrics_id] = $totalinbale;
+            $artoutyard[$fabricsd->fabrics_id] = $totaloutyard;
+            $artoutbale[$fabricsd->fabrics_id] = $totaloutbale;
+        }
 
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
@@ -228,62 +274,35 @@ class fabricsexcel extends BaseController
             }
 
             $tp = 10;
-            $fabricsd = $this->db->table("fabricsd")->where("fabrics_id", $usr->fabrics_id)->get();
-            $totalinyard = 0;
-            $totalinbale = 0;
-            $totaloutyard = 0;
-            $totaloutbale = 0;
-            foreach ($fabricsd->getResult() as $fabricsd) {
-                if ($fabricsd->fabricsd_type == "IN") {
-                    $totalinyard += $fabricsd->fabricsd_yard;
-                    $totalinbale += $fabricsd->fabricsd_bale;
+            foreach ($ardate as $ardat) {
+                $fabricsdin_yard = Coordinate::stringFromColumnIndex($tp);
+                $sheet->setCellValue($fabricsdin_yard . $row, $arinyard[$usr->fabrics_id][$ardat]);
 
-                    $fabricsd_yard = Coordinate::stringFromColumnIndex($tp);
-                    $sheet->setCellValue($fabricsd_yard . $row, $fabricsd->fabricsd_yard);
-                    // echo $fabricsd_yard . $row." , ".$fabricsd->fabricsd_yard."<br/>";
+                $fabricsdin_bale = Coordinate::stringFromColumnIndex($tp + 1);
+                $sheet->setCellValue($fabricsdin_bale . $row,  $arinbale[$usr->fabrics_id][$ardat]);
 
-                    $fabricsd_bale = Coordinate::stringFromColumnIndex($tp + 1);
-                    $sheet->setCellValue($fabricsd_bale . $row, $fabricsd->fabricsd_bale);
-                    // echo $fabricsd_bale . $row." , ".$fabricsd->fabricsd_bale."<br/>";
+                $fabricsdout_yard = Coordinate::stringFromColumnIndex($tp + 2);
+                $sheet->setCellValue($fabricsdout_yard . $row, $aroutyard[$usr->fabrics_id][$ardat]);
 
-                    $kosong1 = Coordinate::stringFromColumnIndex($tp + 2);
-                    $sheet->setCellValue($kosong1 . $row, "");
-
-                    $kosong2 = Coordinate::stringFromColumnIndex($tp + 3);
-                    $sheet->setCellValue($kosong2 . $row, "");
-                } else {
-                    $totaloutyard += $fabricsd->fabricsd_yard;
-                    $totaloutbale += $fabricsd->fabricsd_bale;
-
-                    $kosong1 = Coordinate::stringFromColumnIndex($tp);
-                    $sheet->setCellValue($kosong1 . $row, "");
-
-                    $kosong2 = Coordinate::stringFromColumnIndex($tp + 1);
-                    $sheet->setCellValue($kosong2 . $row, "");
-
-                    $fabricsd_yard = Coordinate::stringFromColumnIndex($tp + 2);
-                    $sheet->setCellValue($fabricsd_yard . $row, $fabricsd->fabricsd_yard);
-
-                    $fabricsd_bale = Coordinate::stringFromColumnIndex($tp + 3);
-                    $sheet->setCellValue($fabricsd_bale . $row, $fabricsd->fabricsd_bale);
-                }
+                $fabricsdout_bale = Coordinate::stringFromColumnIndex($tp + 3);
+                $sheet->setCellValue($fabricsdout_bale . $row, $aroutbale[$usr->fabrics_id][$ardat]);
                 $tp += 4;
-            }
+            }   
 
             $totalinyardd = Coordinate::stringFromColumnIndex($tp);
-            $sheet->setCellValue($totalinyardd . $row, $totalinyard);
+            $sheet->setCellValue($totalinyardd . $row, $artinyard[$usr->fabrics_id]);
             $totalinbaled = Coordinate::stringFromColumnIndex($tp + 1);
-            $sheet->setCellValue($totalinbaled . $row, $totalinbale);
+            $sheet->setCellValue($totalinbaled . $row, $artinbale[$usr->fabrics_id]);
 
-            $breceive = $totalinyard - $usr->fabrics_yds;
+            $breceive = $artinyard[$usr->fabrics_id] - $usr->fabrics_yds;
             $breceived = Coordinate::stringFromColumnIndex($tp + 2);
             $sheet->setCellValue($breceived . $row, $breceive);
             $totaloutyardd = Coordinate::stringFromColumnIndex($tp + 3);
-            $sheet->setCellValue($totaloutyardd . $row, $totaloutyard);
+            $sheet->setCellValue($totaloutyardd . $row, $artoutyard[$usr->fabrics_id]);
             $totaloutbaled = Coordinate::stringFromColumnIndex($tp + 4);
-            $sheet->setCellValue($totaloutbaled . $row, $totaloutbale);
+            $sheet->setCellValue($totaloutbaled . $row, $artoutbale[$usr->fabrics_id]);
 
-            $bload = $totaloutyard - $totalinyard;
+            $bload = $artoutyard[$usr->fabrics_id] - $artinyard[$usr->fabrics_id];
             $bloadd = Coordinate::stringFromColumnIndex($tp + 5);
             $sheet->setCellValue($bloadd . $row, $bload);
 
