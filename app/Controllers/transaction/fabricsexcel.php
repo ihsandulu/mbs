@@ -323,8 +323,10 @@ class fabricsexcel extends BaseController
 
             if (isset($artinyard[$usr->fabrics_id])) {
                 $artinyard1 = $artinyard[$usr->fabrics_id];
+                $artinyard2 = $artinyard[$usr->fabrics_id];
             } else {
                 $artinyard1 = "";
+                $artinyard2 = 0;
             }
             $totalinyardd = Coordinate::stringFromColumnIndex($tp);
             $sheet->setCellValue($totalinyardd . $row, $artinyard1);
@@ -337,14 +339,16 @@ class fabricsexcel extends BaseController
             $totalinbaled = Coordinate::stringFromColumnIndex($tp + 1);
             $sheet->setCellValue($totalinbaled . $row, $artinbale1);
 
-            $breceive = $artinyard1 - $usr->fabrics_yds;
+            $breceive = $artinyard2 - $usr->fabrics_yds;
             $breceived = Coordinate::stringFromColumnIndex($tp + 2);
             $sheet->setCellValue($breceived . $row, $breceive);
 
             if (isset($artoutyard[$usr->fabrics_id])) {
                 $artoutyard1 = $artoutyard[$usr->fabrics_id];
+                $artoutyard2 = $artoutyard[$usr->fabrics_id];
             } else {
                 $artoutyard1 = "";
+                $artoutyard2 = 0;
             }
             $totaloutyardd = Coordinate::stringFromColumnIndex($tp + 3);
             $sheet->setCellValue($totaloutyardd . $row, $artoutyard1);
@@ -357,7 +361,7 @@ class fabricsexcel extends BaseController
             $totaloutbaled = Coordinate::stringFromColumnIndex($tp + 4);
             $sheet->setCellValue($totaloutbaled . $row, $artoutbale1);
 
-            $bload = $artoutyard1 - $artinyard1;
+            $bload = $artoutyard2 - $artinyard2;
             $bloadd = Coordinate::stringFromColumnIndex($tp + 5);
             $sheet->setCellValue($bloadd . $row, $bload);
 
