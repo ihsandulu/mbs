@@ -47,7 +47,7 @@
                         </li>
                     <?php } ?>
 
-                    <!-- <?php
+                    <?php
                             if (
                                 (
                                     isset(session()->get("position_id")[0][0])
@@ -62,7 +62,7 @@
                                 )
                             ) { ?>
                         <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false" data-toggle="collapse" data-target="#demo"><i class="fa fa-user"></i><span class="hide-menu">Manajemen Karyawan <span class="label label-rouded label-warning pull-right">2</span></span></a>
+                            <a class="has-arrow  " href="#" aria-expanded="false" data-toggle="collapse" data-target="#demo"><i class="fa fa-user"></i><span class="hide-menu">Manajemen User <span class="label label-rouded label-warning pull-right">2</span></span></a>
                             <ul aria-expanded="false" id="demo" class="collapse">
                                 <?php
                                 if (
@@ -94,30 +94,11 @@
                                         && session()->get("halaman")['5']['act_read'] == "1"
                                     )
                                 ) { ?>
-                                    <li><a href="<?= base_url("muser"); ?>"><i class="fa fa-caret-right"></i> &nbsp;Karyawan</a></li>
+                                    <li><a href="<?= base_url("muser"); ?>"><i class="fa fa-caret-right"></i> &nbsp;User</a></li>
                                 <?php } ?>
                             </ul>
                         </li>
                     <?php } ?>
-                    
-                    <?php
-                    if (
-                        (
-                            isset(session()->get("position_id")[0][0])
-                            && (
-                                session()->get("position_id") == "1"
-                                || session()->get("position_id") == "2"
-                            )
-                        ) ||
-                        (
-                            isset(session()->get("halaman")['50']['act_read'])
-                            && session()->get("halaman")['50']['act_read'] == "1"
-                        )
-                    ) { ?>
-                        <li>
-                            <a class="  " href="<?= base_url("mdepartemen"); ?>" aria-expanded="false"><i class="fa fa-building"></i><span class="hide-menu">Departemen</span></a>
-                        </li>
-                    <?php } ?> -->
 
                     <?php
                     if (
