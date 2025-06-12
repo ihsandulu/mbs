@@ -5,7 +5,7 @@
     }
 
     .btn-export-hijau {
-        background-color:rgb(71, 207, 103) !important;
+        background-color: rgb(71, 207, 103) !important;
         /* Warna hijau */
         color: white !important;
         border: none;
@@ -16,7 +16,7 @@
     }
 
     .btn-export-hijau:hover {
-        background-color:rgb(59, 163, 82) !important;
+        background-color: rgb(59, 163, 82) !important;
         /* Warna hijau lebih gelap saat hover */
     }
 
@@ -250,8 +250,8 @@
                                     ?>
                                     <div class="col-9">
                                         <select id="mfiltern" onchange="pilihfilter()" class="form-control">
-                                            <option value="tgl" <?= ($filtern == "tgl") ? "selected" : ""; ?>>Tgl Awal Masuk</option>
                                             <option value="fileno" <?= ($filtern == "fileno") ? "selected" : ""; ?>>File No.</option>
+                                            <option value="tgl" <?= ($filtern == "tgl") ? "selected" : ""; ?>>Tgl Awal Masuk</option>
                                         </select>
                                     </div>
                                 </div>
