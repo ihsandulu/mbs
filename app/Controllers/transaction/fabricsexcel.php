@@ -70,9 +70,18 @@ class fabricsexcel extends BaseController
             $ardate[] = $usr->fabricsd_date;
         }
 
-        $fabricsd = $this->db->table("fabricsd")
-            ->where("fabrics_id", $usr->fabrics_id)
-            ->get();
+        $build = $this->db->table("fabricsd");
+        if (isset($_GET["buyer_id"])) {
+            $build->where("buyer_id", $_GET["buyer_id"]);
+        }
+        if (isset($_GET["fileno"])) {
+            $build->where("fabrics_fileno", $_GET["fileno"]);
+        }
+        if (isset($_GET["dari"]) && isset($_GET["ke"])) {
+            $build->where("fabrics_date >=", $dari)
+                ->where("fabrics_date <=", $ke);
+        }
+        $fabricsd = $build->get();
         $totalinyard = 0;
         $totalinbale = 0;
         $totaloutyard = 0;
