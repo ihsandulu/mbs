@@ -277,34 +277,77 @@ class fabricsexcel extends BaseController
 
             $tp = 10;
             foreach ($ardate as $ardat) {
+                if (isset($arinyard[$usr->fabrics_id][$ardat])) {
+                    $arinyard1 = $arinyard[$usr->fabrics_id][$ardat];
+                } else {
+                    $arinyard1 = "";
+                }
                 $fabricsdin_yard = Coordinate::stringFromColumnIndex($tp);
-                $sheet->setCellValue($fabricsdin_yard . $row, $arinyard[$usr->fabrics_id][$ardat]);
+                $sheet->setCellValue($fabricsdin_yard . $row, $arinyard1);
 
+                if (isset($arinbale[$usr->fabrics_id][$ardat])) {
+                    $arinbale1 = $arinbale[$usr->fabrics_id][$ardat];
+                } else {
+                    $arinbale1 = "";
+                }
                 $fabricsdin_bale = Coordinate::stringFromColumnIndex($tp + 1);
-                $sheet->setCellValue($fabricsdin_bale . $row,  $arinbale[$usr->fabrics_id][$ardat]);
+                $sheet->setCellValue($fabricsdin_bale . $row,  $arinbale1);
 
+                if (isset($aroutyard[$usr->fabrics_id][$ardat])) {
+                    $aroutyard1 = $aroutyard[$usr->fabrics_id][$ardat];
+                } else {
+                    $aroutyard1 = "";
+                }
                 $fabricsdout_yard = Coordinate::stringFromColumnIndex($tp + 2);
-                $sheet->setCellValue($fabricsdout_yard . $row, $aroutyard[$usr->fabrics_id][$ardat]);
+                $sheet->setCellValue($fabricsdout_yard . $row, $aroutyard1);
 
+                if (isset($aroutbale[$usr->fabrics_id][$ardat])) {
+                    $aroutbale1 = $aroutbale[$usr->fabrics_id][$ardat];
+                } else {
+                    $aroutbale1 = "";
+                }
                 $fabricsdout_bale = Coordinate::stringFromColumnIndex($tp + 3);
-                $sheet->setCellValue($fabricsdout_bale . $row, $aroutbale[$usr->fabrics_id][$ardat]);
+                $sheet->setCellValue($fabricsdout_bale . $row, $aroutbale1);
                 $tp += 4;
             }
 
+            if (isset($artinyard[$usr->fabrics_id])) {
+                $artinyard1 = $artinyard[$usr->fabrics_id];
+            } else {
+                $artinyard1 = "";
+            }
             $totalinyardd = Coordinate::stringFromColumnIndex($tp);
-            $sheet->setCellValue($totalinyardd . $row, $artinyard[$usr->fabrics_id]);
-            $totalinbaled = Coordinate::stringFromColumnIndex($tp + 1);
-            $sheet->setCellValue($totalinbaled . $row, $artinbale[$usr->fabrics_id]);
+            $sheet->setCellValue($totalinyardd . $row, $artinyard1);
 
-            $breceive = $artinyard[$usr->fabrics_id] - $usr->fabrics_yds;
+            if (isset($artinbale[$usr->fabrics_id])) {
+                $artinbale1 = $artinbale[$usr->fabrics_id];
+            } else {
+                $artinbale1 = "";
+            }
+            $totalinbaled = Coordinate::stringFromColumnIndex($tp + 1);
+            $sheet->setCellValue($totalinbaled . $row, $artinbale1);
+
+            $breceive = $artinyard1 - $usr->fabrics_yds;
             $breceived = Coordinate::stringFromColumnIndex($tp + 2);
             $sheet->setCellValue($breceived . $row, $breceive);
-            $totaloutyardd = Coordinate::stringFromColumnIndex($tp + 3);
-            $sheet->setCellValue($totaloutyardd . $row, $artoutyard[$usr->fabrics_id]);
-            $totaloutbaled = Coordinate::stringFromColumnIndex($tp + 4);
-            $sheet->setCellValue($totaloutbaled . $row, $artoutbale[$usr->fabrics_id]);
 
-            $bload = $artoutyard[$usr->fabrics_id] - $artinyard[$usr->fabrics_id];
+            if (isset($artoutyard[$usr->fabrics_id])) {
+                $artoutyard1 = $artoutyard[$usr->fabrics_id];
+            } else {
+                $artoutyard1 = "";
+            }
+            $totaloutyardd = Coordinate::stringFromColumnIndex($tp + 3);
+            $sheet->setCellValue($totaloutyardd . $row, $artoutyard1);
+
+            if (isset($artoutbale[$usr->fabrics_id])) {
+                $artoutbale1 = $artoutbale[$usr->fabrics_id];
+            } else {
+                $artoutbale1 = "";
+            }
+            $totaloutbaled = Coordinate::stringFromColumnIndex($tp + 4);
+            $sheet->setCellValue($totaloutbaled . $row, $artoutbale1);
+
+            $bload = $artoutyard1 - $artinyard1;
             $bloadd = Coordinate::stringFromColumnIndex($tp + 5);
             $sheet->setCellValue($bloadd . $row, $bload);
 
