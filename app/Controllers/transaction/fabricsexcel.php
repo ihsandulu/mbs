@@ -70,7 +70,8 @@ class fabricsexcel extends BaseController
             $ardate[] = $usr->fabricsd_date;
         }
 
-        $build = $this->db->table("fabricsd");
+        $build = $this->db->table("fabricsd")
+        ->join("fabrics","fabrics.fabrics_id=fabricsd.fabrics_id","left");
         if (isset($_GET["buyer_id"])) {
             $build->where("buyer_id", $_GET["buyer_id"]);
         }
