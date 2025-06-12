@@ -149,92 +149,119 @@
                                 <strong><?= $message; ?></strong>
                             </div>
                         <?php } ?>
-                        <div class="alert alert-dark">
-                            <form id="formku" class="form-horizontal row" method="post" enctype="multipart/form-data">
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="date" class="form-control " id="ifabrics_date" name="fabrics_date" placeholder="Tanggal" value="">
+                        <?php
+                        if (
+                            (
+                                isset(session()->get("position_administrator")[0][0])
+                                && (
+                                    session()->get("position_administrator") == "1"
+                                    || session()->get("position_administrator") == "2"
+                                )
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['97']['act_update'])
+                                && session()->get("halaman")['97']['act_update'] == "1"
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['100']['act_update'])
+                                && session()->get("halaman")['100']['act_update'] == "1"
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['101']['act_update'])
+                                && session()->get("halaman")['101']['act_update'] == "1"
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['102']['act_update'])
+                                && session()->get("halaman")['102']['act_update'] == "1"
+                            )
+                        ) { ?>
+                            <div class="alert alert-dark">
+                                <form id="formku" class="form-horizontal row" method="post" enctype="multipart/form-data">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="date" class="form-control " id="ifabrics_date" name="fabrics_date" placeholder="Tanggal" value="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_name" name="fabrics_name" placeholder="Fabrication" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_name" name="fabrics_name" placeholder="Fabrication" value="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_color" name="fabrics_color" placeholder="Color" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_color" name="fabrics_color" placeholder="Color" value="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="file" class="form-control " id="ifabrics_cad" name="fabrics_cad" placeholder="File" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="file" class="form-control " id="ifabrics_cad" name="fabrics_cad" placeholder="File" value="">
+                                        </div>
                                     </div>
-                                </div>
 
 
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_fileno" name="fabrics_fileno" placeholder="File No." value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_fileno" name="fabrics_fileno" placeholder="File No." value="">
+                                        </div>
                                     </div>
-                                </div>
 
 
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_part" name="fabrics_part" placeholder="Part" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_part" name="fabrics_part" placeholder="Part" value="">
+                                        </div>
                                     </div>
-                                </div>
 
 
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_qty" name="fabrics_qty" placeholder="Qty" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_qty" name="fabrics_qty" placeholder="Qty" value="">
+                                        </div>
                                     </div>
-                                </div>
 
 
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_yds" name="fabrics_yds" placeholder="YDS" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_yds" name="fabrics_yds" placeholder="YDS" value="">
+                                        </div>
                                     </div>
-                                </div>
 
 
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_lbs" name="fabrics_lbs" placeholder="LBS" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_lbs" name="fabrics_lbs" placeholder="LBS" value="">
+                                        </div>
                                     </div>
-                                </div>
 
 
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabrics_remark" name="fabrics_remark" placeholder="Remarks" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabrics_remark" name="fabrics_remark" placeholder="Remarks" value="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <input type="hidden" id="ibuyer_id" name="buyer_id" value="<?= $buyer; ?>">
+                                    <input type="hidden" id="ibuyer_id" name="buyer_id" value="<?= $buyer; ?>">
 
-                                <div class="form-group  col-4 row">
-                                    <div class="col-sm-6">
-                                        <button type="submit" id="submit" class="btn btn-primary  btn-block" name="create" value="OK">Submit</button>
+                                    <div class="form-group  col-4 row">
+                                        <div class="col-sm-6">
+                                            <button type="submit" id="submit" class="btn btn-primary  btn-block" name="create" value="OK">Submit</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button onclick="clearForm()" type="button" id="submit" class="btn btn-success btn-block" name="create" value="OK">Clear</button>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <button onclick="clearForm()" type="button" id="submit" class="btn btn-success btn-block" name="create" value="OK">Clear</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                                </form>
+                            </div>
+                        <?php } ?>
                         <div class="alert alert-white">
                             <div class="row">
                                 <div class="col-4 row mb-2">
@@ -381,8 +408,20 @@
                                                             )
                                                         ) ||
                                                         (
-                                                            isset(session()->get("halaman")['97']['act_update'])
-                                                            && session()->get("halaman")['97']['act_update'] == "1"
+                                                            isset(session()->get("halaman")['97']['act_read'])
+                                                            && session()->get("halaman")['97']['act_read'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['100']['act_read'])
+                                                            && session()->get("halaman")['100']['act_read'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['101']['act_read'])
+                                                            && session()->get("halaman")['101']['act_read'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['102']['act_read'])
+                                                            && session()->get("halaman")['102']['act_read'] == "1"
                                                         )
                                                     ) { ?>
                                                         <form method="get" class="isin btn-action" action="<?= base_url("fabricsd"); ?>">
@@ -390,6 +429,34 @@
                                                             <input type="hidden" name="fabrics_id" value="<?= $usr->fabrics_id; ?>" />
                                                             <input type="hidden" name="title" value="<?= $title; ?>" />
                                                         </form>
+                                                    <?php } ?>
+
+                                                    <?php
+                                                    if (
+                                                        (
+                                                            isset(session()->get("position_administrator")[0][0])
+                                                            && (
+                                                                session()->get("position_administrator") == "1"
+                                                                || session()->get("position_administrator") == "2"
+                                                            )
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['97']['act_update'])
+                                                            && session()->get("halaman")['97']['act_update'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['100']['act_update'])
+                                                            && session()->get("halaman")['100']['act_update'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['101']['act_update'])
+                                                            && session()->get("halaman")['101']['act_update'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['102']['act_update'])
+                                                            && session()->get("halaman")['102']['act_update'] == "1"
+                                                        )
+                                                    ) { ?>
                                                         <form method="post" class="isin btn-action">
                                                             <button type="button" onclick="editkolom(<?= $usr->fabrics_id; ?>)" class="btn btn-sm btn-warning " name="edit" value="OK"><span class="fa fa-edit" style="color:white;"></span> </button>
                                                             <input type="hidden" name="fabrics_id" value="<?= $usr->fabrics_id; ?>" />
@@ -408,6 +475,18 @@
                                                         (
                                                             isset(session()->get("halaman")['97']['act_delete'])
                                                             && session()->get("halaman")['97']['act_delete'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['100']['act_delete'])
+                                                            && session()->get("halaman")['100']['act_delete'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['101']['act_delete'])
+                                                            && session()->get("halaman")['101']['act_delete'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['102']['act_delete'])
+                                                            && session()->get("halaman")['102']['act_delete'] == "1"
                                                         )
                                                     ) { ?>
                                                         <form method="post" class="isin btn-action">
