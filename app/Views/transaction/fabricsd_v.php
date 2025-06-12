@@ -17,7 +17,7 @@
                             </a>
                         </div>
                         <div class="col-2 ">
-                            
+
                         </div>
 
                         <?php if (!isset($_POST['new']) && !isset($_POST['edit']) && !isset($_GET['report'])) { ?>
@@ -113,46 +113,73 @@
                                 <strong><?= $message; ?></strong>
                             </div>
                         <?php } ?>
-                        <div class="alert alert-dark">
-                            <form id="formku" class="form-horizontal row" method="post" enctype="multipart/form-data">
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <select required class="form-control " id="ifabricsd_type" name="fabricsd_type">
-                                            <option value="">Pilih IN/OUT</option>
-                                            <option value="IN">IN</option>
-                                            <option value="OUT">OUT</option>
-                                        </select>
+                        <?php
+                        if (
+                            (
+                                isset(session()->get("position_administrator")[0][0])
+                                && (
+                                    session()->get("position_administrator") == "1"
+                                    || session()->get("position_administrator") == "2"
+                                )
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['97']['act_update'])
+                                && session()->get("halaman")['97']['act_update'] == "1"
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['100']['act_update'])
+                                && session()->get("halaman")['100']['act_update'] == "1"
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['101']['act_update'])
+                                && session()->get("halaman")['101']['act_update'] == "1"
+                            ) ||
+                            (
+                                isset(session()->get("halaman")['102']['act_update'])
+                                && session()->get("halaman")['102']['act_update'] == "1"
+                            )
+                        ) { ?>
+                            <div class="alert alert-dark">
+                                <form id="formku" class="form-horizontal row" method="post" enctype="multipart/form-data">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <select required class="form-control " id="ifabricsd_type" name="fabricsd_type">
+                                                <option value="">Pilih IN/OUT</option>
+                                                <option value="IN">IN</option>
+                                                <option value="OUT">OUT</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="date" class="form-control " id="ifabricsd_date" name="fabricsd_date" placeholder="Tanggal" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="date" class="form-control " id="ifabricsd_date" name="fabricsd_date" placeholder="Tanggal" value="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabricsd_yard" name="fabricsd_yard" placeholder="Yard" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabricsd_yard" name="fabricsd_yard" placeholder="Yard" value="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-2">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control " id="ifabricsd_bale" name="fabricsd_bale" placeholder="Bale" value="">
+                                    <div class="form-group col-2">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control " id="ifabricsd_bale" name="fabricsd_bale" placeholder="Bale" value="">
+                                        </div>
                                     </div>
-                                </div>
-                                <input type="hidden" id="fabrics_id" name="fabrics_id" value="<?= $_GET["fabrics_id"]; ?>" />
+                                    <input type="hidden" id="fabrics_id" name="fabrics_id" value="<?= $_GET["fabrics_id"]; ?>" />
 
-                                <div class="form-group  col-4 row">
-                                    <div class="col-sm-6">
-                                        <button type="submit" id="submit" class="btn btn-primary  btn-block" name="create" value="OK">Submit</button>
+                                    <div class="form-group  col-4 row">
+                                        <div class="col-sm-6">
+                                            <button type="submit" id="submit" class="btn btn-primary  btn-block" name="create" value="OK">Submit</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button onclick="clearForm()" type="button" id="submit" class="btn btn-success btn-block" name="create" value="OK">Clear</button>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <button onclick="clearForm()" type="button" id="submit" class="btn btn-success btn-block" name="create" value="OK">Clear</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                                </form>
+                            </div>
+                        <?php } ?>
                         <div class="alert alert-white">
                             <div class="row">
                                 <div class="col-4 row mb-2">
@@ -202,7 +229,7 @@
                                             <input type="date" class="form-control" placeholder="Ke" name="ke" value="<?= $ke; ?>">
                                         </div>
                                     </div>
-                                    <input type="hidden" name="fabrics_id" value="<?=$_GET["fabrics_id"];?>"/>
+                                    <input type="hidden" name="fabrics_id" value="<?= $_GET["fabrics_id"]; ?>" />
                                     <div class="col-4 row mb-2">
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-block btn-primary">Search</button>
@@ -228,7 +255,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <input type="hidden" name="fabrics_id" value="<?=$_GET["fabrics_id"];?>"/>
+                                    <input type="hidden" name="fabrics_id" value="<?= $_GET["fabrics_id"]; ?>" />
                                     <div class="col-4 row mb-2">
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-block btn-primary">Search</button>
@@ -281,8 +308,8 @@
                                         $build->where("fabricsd_type", $tipe);
                                     }
                                     $usr = $build
-                                    ->orderBy("fabricsd_date DESC")
-                                    ->orderBy("fabricsd_type DESC")
+                                        ->orderBy("fabricsd_date DESC")
+                                        ->orderBy("fabricsd_type DESC")
                                         ->get();
                                     //echo $this->db->getLastquery();
                                     $no = 1;
@@ -303,6 +330,18 @@
                                                         (
                                                             isset(session()->get("halaman")['97']['act_update'])
                                                             && session()->get("halaman")['97']['act_update'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['100']['act_update'])
+                                                            && session()->get("halaman")['100']['act_update'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['101']['act_update'])
+                                                            && session()->get("halaman")['101']['act_update'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['102']['act_update'])
+                                                            && session()->get("halaman")['102']['act_update'] == "1"
                                                         )
                                                     ) { ?>
 
@@ -324,6 +363,18 @@
                                                         (
                                                             isset(session()->get("halaman")['97']['act_delete'])
                                                             && session()->get("halaman")['97']['act_delete'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['100']['act_delete'])
+                                                            && session()->get("halaman")['100']['act_delete'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['101']['act_delete'])
+                                                            && session()->get("halaman")['101']['act_delete'] == "1"
+                                                        ) ||
+                                                        (
+                                                            isset(session()->get("halaman")['102']['act_delete'])
+                                                            && session()->get("halaman")['102']['act_delete'] == "1"
                                                         )
                                                     ) { ?>
                                                         <form method="post" class="isin btn-action">
