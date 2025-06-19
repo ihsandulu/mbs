@@ -69,6 +69,8 @@
                                 ->where("fabrics_date <=", $ke);
                         }
                         $fabricsd = $build->get();
+                        /* echo $this->db->getLastQuery();
+                        die; */
                         $totalinyard = 0;
                         $totalinbale = 0;
                         $totaloutyard = 0;
@@ -81,7 +83,14 @@
                         $artinbale = array();
                         $artoutyard = array();
                         $artoutbale = array();
+                        $fabricsid = 0;
                         foreach ($fabricsd->getResult() as $fabricsd) {
+                            if ($fabricsid != $fabricsd->fabrics_id) {
+                                $totalinyard = 0;
+                                $totalinbale = 0;
+                                $totaloutyard = 0;
+                                $totaloutbale = 0;
+                            }
                             if ($fabricsd->fabricsd_type == "IN") {
                                 $arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_yard;
                                 $arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_bale;
@@ -112,6 +121,8 @@
                             $artinbale[$fabricsd->fabrics_id] = $totalinbale;
                             $artoutyard[$fabricsd->fabrics_id] = $totaloutyard;
                             $artoutbale[$fabricsd->fabrics_id] = $totaloutbale;
+
+                            $fabricsid = $fabricsd->fabrics_id;
                         } ?>
                         <table id="tabelku" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                             <!-- <table id="dataTable" class="table table-condensed table-hover w-auto dtable"> -->
