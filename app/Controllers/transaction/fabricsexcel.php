@@ -71,7 +71,7 @@ class fabricsexcel extends BaseController
         }
 
         $build = $this->db->table("fabricsd")
-        ->join("fabrics","fabrics.fabrics_id=fabricsd.fabrics_id","left");
+            ->join("fabrics", "fabrics.fabrics_id=fabricsd.fabrics_id", "left");
         if (isset($_GET["buyer_id"])) {
             $build->where("buyer_id", $_GET["buyer_id"]);
         }
@@ -95,7 +95,14 @@ class fabricsexcel extends BaseController
         $artinbale = array();
         $artoutyard = array();
         $artoutbale = array();
+        $fabricsid = 0;
         foreach ($fabricsd->getResult() as $fabricsd) {
+            if ($fabricsid != $fabricsd->fabrics_id) {
+                $totalinyard = 0;
+                $totalinbale = 0;
+                $totaloutyard = 0;
+                $totaloutbale = 0;
+            }
             if ($fabricsd->fabricsd_type == "IN") {
                 $arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_yard;
                 $arinbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = $fabricsd->fabricsd_bale;
@@ -126,6 +133,8 @@ class fabricsexcel extends BaseController
             $artinbale[$fabricsd->fabrics_id] = $totalinbale;
             $artoutyard[$fabricsd->fabrics_id] = $totaloutyard;
             $artoutbale[$fabricsd->fabrics_id] = $totaloutbale;
+
+            $fabricsid = $fabricsd->fabrics_id;
         }
 
         $spreadsheet = new Spreadsheet();
