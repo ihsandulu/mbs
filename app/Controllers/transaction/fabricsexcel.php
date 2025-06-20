@@ -82,7 +82,10 @@ class fabricsexcel extends BaseController
             $build->where("fabrics_date >=", $dari)
                 ->where("fabrics_date <=", $ke);
         }
-        $fabricsd = $build->get();
+        $fabricsd = $build
+            ->orderBy("fabricsd.fabrics_id", "ASC")
+            ->orderBy("fabrics.fabrics_date", "ASC")
+            ->get();
         $totalinyard = 0;
         $totalinbale = 0;
         $totaloutyard = 0;

@@ -68,7 +68,12 @@
                             $build->where("fabrics_date >=", $dari)
                                 ->where("fabrics_date <=", $ke);
                         }
-                        $fabricsd = $build->get();
+                        // $build->where("fabrics_color", "HEMATITE_BSD");
+                        // $build->orWhere("fabrics_color", "ARUGULA GREEN");
+                        $fabricsd = $build
+                        ->orderBy("fabricsd.fabrics_id","ASC")
+                        ->orderBy("fabrics.fabrics_date","ASC")
+                        ->get();
                         /* echo $this->db->getLastQuery();
                         die; */
                         $totalinyard = 0;
@@ -84,6 +89,7 @@
                         $artoutyard = array();
                         $artoutbale = array();
                         $fabricsid = 0;
+                        // $car = array();
                         foreach ($fabricsd->getResult() as $fabricsd) {
                             if ($fabricsid != $fabricsd->fabrics_id) {
                                 $totalinyard = 0;
@@ -100,9 +106,14 @@
                                 if (!isset($aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
                                     $aroutbale[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
                                 }
-
                                 $totalinyard += $fabricsd->fabricsd_yard;
                                 $totalinbale += $fabricsd->fabricsd_bale;
+                                //test
+                               /*  if ($fabricsd->fabrics_id == 20) {
+                                    $car["detail"][] = $fabricsd->fabricsd_yard;
+                                    $car["total"][] = $totalinyard;
+                                    $car["fabricsid"][] = $fabricsid." != ".$fabricsd->fabrics_id;
+                                } */
                             } else {
                                 if (!isset($arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date])) {
                                     $arinyard[$fabricsd->fabrics_id][$fabricsd->fabricsd_date] = "";
@@ -123,7 +134,10 @@
                             $artoutbale[$fabricsd->fabrics_id] = $totaloutbale;
 
                             $fabricsid = $fabricsd->fabrics_id;
-                        } ?>
+                        }
+
+                        // dd($car);
+                        ?>
                         <table id="tabelku" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                             <!-- <table id="dataTable" class="table table-condensed table-hover w-auto dtable"> -->
                             <thead class="">
@@ -181,6 +195,8 @@
                                         $build->where("fabrics_date >=", $dari)
                                             ->where("fabrics_date <=", $ke);
                                     }
+                                    // $build->where("fabrics_color", "HEMATITE_BSD");
+                                    // $build->orWhere("fabrics_color", "ARUGULA GREEN");
                                     $usr = $build->orderBy("fabrics_date DESC")
                                         ->get();
                                     //echo $this->db->getLastquery();
@@ -207,8 +223,8 @@
                                         <td class=""><?= $usr->fabrics_lbs; ?></td>
                                         <td class=""><?= $usr->fabrics_remark; ?></td>
                                         <?php foreach ($ardate as $ardat) { ?>
-                                            <td class=""><?= (isset($arinyard[$usr->fabrics_id][$ardat])) ? $arinyard[$usr->fabrics_id][$ardat] : ""; ?></td>
-                                            <td class=""><?= (isset($arinbale[$usr->fabrics_id][$ardat])) ? $arinbale[$usr->fabrics_id][$ardat] : ""; ?></td>
+                                            <td class="border-warning"><?= (isset($arinyard[$usr->fabrics_id][$ardat])) ? $arinyard[$usr->fabrics_id][$ardat] : ""; ?></td>
+                                            <td class="border-warning"><?= (isset($arinbale[$usr->fabrics_id][$ardat])) ? $arinbale[$usr->fabrics_id][$ardat] : ""; ?></td>
                                             <td class=""><?= (isset($aroutyard[$usr->fabrics_id][$ardat])) ? $aroutyard[$usr->fabrics_id][$ardat] : ""; ?></td>
                                             <td class=""><?= (isset($aroutbale[$usr->fabrics_id][$ardat])) ? $aroutbale[$usr->fabrics_id][$ardat] : ""; ?></td>
                                         <?php } ?>
